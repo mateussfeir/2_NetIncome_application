@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Return Simulator{% endblock %}
+
+{% block content %}
+<h2>Welcome to the return simulator page!</h2>
+
+<form action="#" method="POST">
+    <p>Choose the stock you want to simulate the investment:</p>
+    <p><input type="text" name="stock"/></p>
+    
+    <p>Choose how much money you invested:</p>
+    <p><input type="text" name="money"/></p>
+    
+    <p>Choose the date:</p>
+    <p><input type="date" name="date"/></p>
+
+    <p><input type="submit" value="submit"/></p>
+</form> 
+
+{% endblock %}
