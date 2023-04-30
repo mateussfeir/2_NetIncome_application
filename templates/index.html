@@ -1,0 +1,17 @@
+<!-- The base.html file contains the informations about the nav bar. -->
+<!-- Just calling it brings the bar to out route -->
+
+{% extends "base.html" %}
+
+<!-- Creating the blocks -->
+
+<!-- Title -->
+{% block title %}Home Page{% endblock %}
+
+<!-- Message -->
+{% block content %}
+<h1>Welcome,</h1>
+<h2>you can navigate throughout the website using the nav bar.</h2>
+{% endblock %}
+
+<!-- We always have to end the blocks -->

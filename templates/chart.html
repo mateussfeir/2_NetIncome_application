@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p>Input the ticker of company you want to receive the net income chart.</p>
+<form action="{{ url_for('chart') }}" method="post">
+    <input type="text" name="stock" placeholder="Enter stock symbol">
+    <input type="submit" value="Submit">
+</form>
+<br>
+<div>
+    {{ chart_html | safe }}
+</div>
+{% endblock %}

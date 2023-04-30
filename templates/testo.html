@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Testo Chart{% endblock %}
+
+{% block content %}
+<h2>Testo Chart</h2>
+<h5>1 week: 275mg</h5>
+<h5>2 week: 225mg</h5>
+<h5>3 week: 250mg</h5>
+<h5>4 week: 250mg</h5>
+<html>
+<head>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <div id="chart">{{ div_placeholder|safe }}</div>
+</body>
+</html>
+
+{% endblock %}

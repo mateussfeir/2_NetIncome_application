@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Chart{% endblock %}
+
+{% block content %}
+<!-- <p>{{stock}}...</p> -->
+<div>
+    {{ chart_html | safe }}
+</div>
+{% endblock %}
